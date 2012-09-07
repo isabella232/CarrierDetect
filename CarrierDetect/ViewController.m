@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
 @interface ViewController ()
-
+@property (nonatomic, strong) IBOutlet UILabel *textLabel;
 @end
 
 @implementation ViewController
@@ -17,7 +19,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  // Setup the Network Info and create a CTCarrier object
+  CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
+  CTCarrier *carrier = [networkInfo subscriberCellularProvider];
+  
+  // Get carrier name
+  NSString *carrierName = [carrier carrierName];
+  if (carrierName != nil)
+    NSLog(@"Carrier: %@", carrierName);
+  self.textLabel.text = carrierName;
 }
 
 - (void)viewDidUnload
@@ -28,11 +38,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-      return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-  } else {
-      return YES;
-  }
+  return YES;
 }
 
 @end
