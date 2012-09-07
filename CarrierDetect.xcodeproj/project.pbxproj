@@ -18,6 +18,14 @@
 		3CC4C1CA15F9D3DB0068FAA5 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4C1C815F9D3DB0068FAA5 /* ViewController_iPad.xib */; };
 		3CC4C1D115F9D4370068FAA5 /* 2359Media_logo_FA.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4C1D015F9D4370068FAA5 /* 2359Media_logo_FA.png */; };
 		3CC4C1D315F9D5C60068FAA5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4C1D215F9D5C60068FAA5 /* CoreTelephony.framework */; };
+		4223B25B15F9FE8000531A66 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 4223B25A15F9FE8000531A66 /* Icon-144.png */; };
+		4223B25D15F9FE8900531A66 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4223B25C15F9FE8900531A66 /* Icon-72.png */; };
+		4223B25F15F9FE9200531A66 /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4223B25E15F9FE9200531A66 /* Icon-114.png */; };
+		4223B26115F9FE9400531A66 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4223B26015F9FE9400531A66 /* Icon-57.png */; };
+		42CB9DC415F9EC0700FCB9C9 /* NetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB9DC315F9EC0700FCB9C9 /* NetworkInfo.m */; };
+		42CB9DCC15F9F37C00FCB9C9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB9DCB15F9F37B00FCB9C9 /* Reachability.m */; };
+		42CB9DCE15F9F6BE00FCB9C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB9DCD15F9F6BE00FCB9C9 /* SystemConfiguration.framework */; };
+		42CB9DD115F9F88400FCB9C9 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB9DD015F9F88300FCB9C9 /* NSString+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +45,17 @@
 		3CC4C1C915F9D3DB0068FAA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		3CC4C1D015F9D4370068FAA5 /* 2359Media_logo_FA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2359Media_logo_FA.png; sourceTree = "<group>"; };
 		3CC4C1D215F9D5C60068FAA5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4223B25A15F9FE8000531A66 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		4223B25C15F9FE8900531A66 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		4223B25E15F9FE9200531A66 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
+		4223B26015F9FE9400531A66 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
+		42CB9DC215F9EC0700FCB9C9 /* NetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInfo.h; sourceTree = "<group>"; };
+		42CB9DC315F9EC0700FCB9C9 /* NetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInfo.m; sourceTree = "<group>"; };
+		42CB9DCA15F9F37B00FCB9C9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		42CB9DCB15F9F37B00FCB9C9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		42CB9DCD15F9F6BE00FCB9C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		42CB9DCF15F9F88300FCB9C9 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		42CB9DD015F9F88300FCB9C9 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CB9DCE15F9F6BE00FCB9C9 /* SystemConfiguration.framework in Frameworks */,
 				3CC4C1D315F9D5C60068FAA5 /* CoreTelephony.framework in Frameworks */,
 				3CC4C1B115F9D3DA0068FAA5 /* UIKit.framework in Frameworks */,
 				3CC4C1B315F9D3DA0068FAA5 /* Foundation.framework in Frameworks */,
@@ -57,7 +77,10 @@
 		3CC4C1A115F9D3DA0068FAA5 = {
 			isa = PBXGroup;
 			children = (
-				3CC4C1D215F9D5C60068FAA5 /* CoreTelephony.framework */,
+				4223B26015F9FE9400531A66 /* Icon-57.png */,
+				4223B25E15F9FE9200531A66 /* Icon-114.png */,
+				4223B25C15F9FE8900531A66 /* Icon-72.png */,
+				4223B25A15F9FE8000531A66 /* Icon-144.png */,
 				3CC4C1B615F9D3DA0068FAA5 /* CarrierDetect */,
 				3CC4C1AF15F9D3DA0068FAA5 /* Frameworks */,
 				3CC4C1AD15F9D3DA0068FAA5 /* Products */,
@@ -75,6 +98,8 @@
 		3CC4C1AF15F9D3DA0068FAA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42CB9DCD15F9F6BE00FCB9C9 /* SystemConfiguration.framework */,
+				3CC4C1D215F9D5C60068FAA5 /* CoreTelephony.framework */,
 				3CC4C1B015F9D3DA0068FAA5 /* UIKit.framework */,
 				3CC4C1B215F9D3DA0068FAA5 /* Foundation.framework */,
 				3CC4C1B415F9D3DA0068FAA5 /* CoreGraphics.framework */,
@@ -93,6 +118,12 @@
 				3CC4C1C515F9D3DB0068FAA5 /* ViewController_iPhone.xib */,
 				3CC4C1C815F9D3DB0068FAA5 /* ViewController_iPad.xib */,
 				3CC4C1B715F9D3DA0068FAA5 /* Supporting Files */,
+				42CB9DC215F9EC0700FCB9C9 /* NetworkInfo.h */,
+				42CB9DC315F9EC0700FCB9C9 /* NetworkInfo.m */,
+				42CB9DCF15F9F88300FCB9C9 /* NSString+Additions.h */,
+				42CB9DD015F9F88300FCB9C9 /* NSString+Additions.m */,
+				42CB9DCA15F9F37B00FCB9C9 /* Reachability.h */,
+				42CB9DCB15F9F37B00FCB9C9 /* Reachability.m */,
 			);
 			path = CarrierDetect;
 			sourceTree = "<group>";
@@ -162,6 +193,10 @@
 				3CC4C1C715F9D3DB0068FAA5 /* ViewController_iPhone.xib in Resources */,
 				3CC4C1CA15F9D3DB0068FAA5 /* ViewController_iPad.xib in Resources */,
 				3CC4C1D115F9D4370068FAA5 /* 2359Media_logo_FA.png in Resources */,
+				4223B25B15F9FE8000531A66 /* Icon-144.png in Resources */,
+				4223B25D15F9FE8900531A66 /* Icon-72.png in Resources */,
+				4223B25F15F9FE9200531A66 /* Icon-114.png in Resources */,
+				4223B26115F9FE9400531A66 /* Icon-57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +210,9 @@
 				3CC4C1BD15F9D3DA0068FAA5 /* main.m in Sources */,
 				3CC4C1C115F9D3DA0068FAA5 /* AppDelegate.m in Sources */,
 				3CC4C1C415F9D3DB0068FAA5 /* ViewController.m in Sources */,
+				42CB9DC415F9EC0700FCB9C9 /* NetworkInfo.m in Sources */,
+				42CB9DCC15F9F37C00FCB9C9 /* Reachability.m in Sources */,
+				42CB9DD115F9F88400FCB9C9 /* NSString+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarrierDetect/CarrierDetect-Prefix.pch";
 				INFOPLIST_FILE = "CarrierDetect/CarrierDetect-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -282,7 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarrierDetect/CarrierDetect-Prefix.pch";
 				INFOPLIST_FILE = "CarrierDetect/CarrierDetect-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
