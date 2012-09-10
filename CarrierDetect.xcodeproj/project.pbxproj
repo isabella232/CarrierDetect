@@ -26,6 +26,8 @@
 		42CB9DCC15F9F37C00FCB9C9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB9DCB15F9F37B00FCB9C9 /* Reachability.m */; };
 		42CB9DCE15F9F6BE00FCB9C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB9DCD15F9F6BE00FCB9C9 /* SystemConfiguration.framework */; };
 		42CB9DD115F9F88400FCB9C9 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB9DD015F9F88300FCB9C9 /* NSString+Additions.m */; };
+		A38FEAD215FB429D007A1887 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A38FEAD115FB429D007A1887 /* background.png */; };
+		A38FEAD515FB4670007A1887 /* ipadbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A38FEAD415FB4670007A1887 /* ipadbackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		42CB9DCD15F9F6BE00FCB9C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		42CB9DCF15F9F88300FCB9C9 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		42CB9DD015F9F88300FCB9C9 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		A38FEAD115FB429D007A1887 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../Desktop/background.png; sourceTree = "<group>"; };
+		A38FEAD415FB4670007A1887 /* ipadbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ipadbackground.png; path = ../../../Desktop/ipadbackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,9 @@
 		3CC4C1B615F9D3DA0068FAA5 /* CarrierDetect */ = {
 			isa = PBXGroup;
 			children = (
+				A38FEAD115FB429D007A1887 /* background.png */,
 				3CC4C1D015F9D4370068FAA5 /* 2359Media_logo_FA.png */,
+				A38FEAD415FB4670007A1887 /* ipadbackground.png */,
 				3CC4C1BF15F9D3DA0068FAA5 /* AppDelegate.h */,
 				3CC4C1C015F9D3DA0068FAA5 /* AppDelegate.m */,
 				3CC4C1C215F9D3DA0068FAA5 /* ViewController.h */,
@@ -197,6 +203,8 @@
 				4223B25D15F9FE8900531A66 /* Icon-72.png in Resources */,
 				4223B25F15F9FE9200531A66 /* Icon-114.png in Resources */,
 				4223B26115F9FE9400531A66 /* Icon-57.png in Resources */,
+				A38FEAD215FB429D007A1887 /* background.png in Resources */,
+				A38FEAD515FB4670007A1887 /* ipadbackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +262,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -271,6 +279,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,8 +293,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: 2359 Media Pte Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 2359 Media Pte Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -294,8 +303,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "AD499169-36C4-4498-8B03-89F95F605486";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD499169-36C4-4498-8B03-89F95F605486";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -305,11 +314,15 @@
 		3CC4C1CE15F9D3DB0068FAA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarrierDetect/CarrierDetect-Prefix.pch";
 				INFOPLIST_FILE = "CarrierDetect/CarrierDetect-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -317,11 +330,15 @@
 		3CC4C1CF15F9D3DB0068FAA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarrierDetect/CarrierDetect-Prefix.pch";
 				INFOPLIST_FILE = "CarrierDetect/CarrierDetect-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
