@@ -12,6 +12,9 @@
 
 int main(int argc, char *argv[])
 {
+  //Tall mode for iPhone5
+  setenv("CLASSIC", "0", 1);
+  
   @autoreleasepool {
       return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
   }
